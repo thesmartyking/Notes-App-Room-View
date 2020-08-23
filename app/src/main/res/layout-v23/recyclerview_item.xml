@@ -18,7 +18,6 @@
         android:textStyle="normal|bold"
         android:layout_marginTop="10dp"
         tools:targetApi="m"
-        android:focusable="true"
-        tools:ignore="UnusedAttribute" />
+        android:focusable="true" />
 
 </LinearLayout>

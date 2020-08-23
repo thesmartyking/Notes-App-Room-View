@@ -52,7 +52,7 @@ abstract class WordRoomDatabase : RoomDatabase() {
         }
 
         suspend fun populateDatabase(wordDao: WordDao) {
-            wordDao.deleteAll()
+            //wordDao.deleteAll()
 
             val word = Word("Welcome to Room with View!")
             wordDao.insert(word)

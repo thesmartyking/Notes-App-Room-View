@@ -36,10 +36,19 @@ class UpdateWordActivity : AppCompatActivity() {
 
             } else {
                 val word = editWordView.text.toString()
-                wordViewModel.insert(Word(word))
-
                 val word1 = Word(selectedWord!!)
-                wordViewModel.deleteword(word1)
+                if(word1==Word(word)) {
+                    Log.d("T1","insert same")
+                   /* wordViewModel.insert(word1)
+                    wordViewModel.insert(word1)*/
+                    Toast.makeText(applicationContext, " Same Word No Need to Update", Toast.LENGTH_LONG ).show()
+                }
+                else
+                {
+                    wordViewModel.insert(Word(word))
+                    wordViewModel.deleteword(word1)
+                }
+
                 Toast.makeText(applicationContext, R.string.able_to_update, Toast.LENGTH_LONG ).show()
 
             }

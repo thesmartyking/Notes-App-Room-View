@@ -56,12 +56,19 @@ class MainActivity : AppCompatActivity() {
                 Unit
             }
         }
-        /*else if(requestCode == updateWordActivityRequestCode && resultCode == Activity.RESULT_OK) {
-            intentData?.getStringExtra(UpdateWordActivity.EXTRA_REPLY)?.let {
-                val word = Word(it)
-                wordViewModel.updateword(word)
-                Unit
-                *//*val id: Int =-1
+
+        else {
+            Toast.makeText(applicationContext, R.string.empty_not_saved, Toast.LENGTH_LONG ).show()
+        }
+    }
+
+}
+/*else if(requestCode == updateWordActivityRequestCode && resultCode == Activity.RESULT_OK) {
+      intentData?.getStringExtra(UpdateWordActivity.EXTRA_REPLY)?.let {
+          val word = Word(it)
+          wordViewModel.updateword(word)
+          Unit
+          *//*val id: Int =-1
                 if(id!=-1)
                 {
                    wordViewModel.updateword(word)
@@ -80,37 +87,32 @@ class MainActivity : AppCompatActivity() {
                 Unit
             }
         }*/
-        else {
-            Toast.makeText(applicationContext, R.string.empty_not_saved, Toast.LENGTH_LONG ).show()
-        }
-    }
-   /* fun launchUpdateWordActivity(word: Word) {
-        val intent = Intent(this, NewWordActivity::class.java)
-        intent.putExtra(MainActivity.EXTRA_DATA_UPDATE_WORD, word.getWord())
-        intent.putExtra(MainActivity.EXTRA_DATA_ID, word.getId())
-        startActivityForResult(intent, MainActivity.UPDATE_WORD_ACTIVITY_REQUEST_CODE)
-    }*/
-    /*val fabupt = findViewById<FloatingActionButton>(R.id.fab_upt)
-        fabupt.setOnClickListener {
-            val intent = Intent(this@MainActivity, UpdateWordActivity::class.java)
-            startActivityForResult(intent, updateWordActivityRequestCode)
-        }
-        val fabdel = findViewById<FloatingActionButton>(R.id.fab_delete)
-        fabdel.setOnClickListener {
-            val intent = Intent(this@MainActivity, DeleteWordActivity::class.java)
-            startActivityForResult(intent, delWordActivityRequestCode)
-        }*/
-    /*adapter.setOnItemClickListener(object : WordListAdapter.ClickListener() {
-        fun onItemClick(v: View?, position: Int) {
-            val word: Word = adapter.getWordAtPosition(position)
-            launchUpdateWordActivity(word)
-        }
-    })*/
 
-    //    private val delWordActivityRequestCode = 3
+
+/* fun launchUpdateWordActivity(word: Word) {
+     val intent = Intent(this, NewWordActivity::class.java)
+     intent.putExtra(MainActivity.EXTRA_DATA_UPDATE_WORD, word.getWord())
+     intent.putExtra(MainActivity.EXTRA_DATA_ID, word.getId())
+     startActivityForResult(intent, MainActivity.UPDATE_WORD_ACTIVITY_REQUEST_CODE)
+ }*/
+/*val fabupt = findViewById<FloatingActionButton>(R.id.fab_upt)
+    fabupt.setOnClickListener {
+        val intent = Intent(this@MainActivity, UpdateWordActivity::class.java)
+        startActivityForResult(intent, updateWordActivityRequestCode)
+    }
+    val fabdel = findViewById<FloatingActionButton>(R.id.fab_delete)
+    fabdel.setOnClickListener {
+        val intent = Intent(this@MainActivity, DeleteWordActivity::class.java)
+        startActivityForResult(intent, delWordActivityRequestCode)
+    }*/
+/*adapter.setOnItemClickListener(object : WordListAdapter.ClickListener() {
+    fun onItemClick(v: View?, position: Int) {
+        val word: Word = adapter.getWordAtPosition(position)
+        launchUpdateWordActivity(word)
+    }
+})*/
+
+//    private val delWordActivityRequestCode = 3
 //    private val updateWordActivityRequestCode = 2
 /*    val EXTRA_DATA_UPDATE_WORD = "extra_word_to_be_updated"
     val EXTRA_DATA_ID = "extra_data_id"*/
-
-
-}

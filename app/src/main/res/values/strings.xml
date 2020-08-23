@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">APP-7-ROOM-WITH-VIEW-DATABASE-INSERT,DELETE,UPDATE</string>
+    <string name="app_name">Notes-App-Room-Database</string>
+<!--    <string name="app_name">APP-7-ROOM-WITH-VIEW-DATABASE-INSERT,DELETE,UPDATE</string>-->
     <string name="hint_word">Enter Data to Save</string>
     <string name="del_word">Enter Data to Delete</string>
     <string name="upt_word">Enter Data to Update/Delete</string>
