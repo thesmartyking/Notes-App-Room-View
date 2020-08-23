@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">APP-7-ROOM-WITH-VIEW-DATABASE-INSERT,DELETE,UPDATE</string>
+    <string name="hint_word">Enter Data to Save</string>
+    <string name="del_word">Enter Data to Delete</string>
+    <string name="upt_word">Enter Data to Update/Delete</string>
+    <string name="saved_word_to_upt">Enter New Data</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_update">Update</string>
+    <string name="empty_not_saved">Data not saved because it is empty.</string>
+    <string name="unable_to_update">Unable to update the Data</string>
+    <string name="unable_to_delete">Unable to Delete the Data</string>
+    <string name="able_to_update">Updated the Data Successfully!!!</string>
+    <string name="able_to_delete">Deleted the Data Successfully!!!</string>
+    <string name="able_to_save">Data Saved Successfully!!!</string>
+</resources>
