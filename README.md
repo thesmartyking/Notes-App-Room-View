@@ -1,8 +1,6 @@
 # Notes-App-Room-View
 An App that helps User to Write, Update &amp; Delete the context as same Notepad and this App is made on concept of Room from Android Jetpack. Notes App Room Database with View Which Includes Concepts of (CRUD) such as Insertion of Data, Update &amp; Delete. App is completely based on Room Database which is the concept of Android Jetpack.
 
-[**GO TO WEBSITE !**](https://thesmartyking.github.io/Notes-App-Room-View)
-
 To Download this Signed Apk for the Android Device > 6.0 :- [**Download App From Here !**](https://github.com/thesmartyking/Notes-App-Room-View/raw/master/Notes-App-Room-Database.apk)
 
 ---
